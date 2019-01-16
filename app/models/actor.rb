@@ -5,7 +5,7 @@ class Actor < ActiveRecord::Base
   def full_name
     firstname = self.first_name
     lastname = self.last_name
-    fullname = "#{firstname} #{lastname}"
+    fullname = "#{self.first_name} #{self.last_name}"
   end
 
 end
